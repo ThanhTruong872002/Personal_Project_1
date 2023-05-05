@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/roobert?styles=49579,49575,49577,49581,49571,49573" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<script>
+
+    const list_spEl = [
+        {
+            'name': 'Mid Century Modern T-Shirt',
+            'price': 110,
+            'image': 'img/Image2.png',
+        },
+        {
+            'name': 'Corporate Office Shoes',
+            'price': 399,
+            'image': 'img/Image3.png'
+        },
+        {
+            'name': 'Black Hoodie',
+            'price': 110,
+            'image': 'img/Image4.png'
+        },
+        {
+            'name': 'Green Shoes',
+            'price': 110,
+            'image': 'img/Image5.png'
+        },
+        {
+            'name': 'Corporate Office Shoes',
+            'price': 399,
+            'image': 'img/Images6.png'
+        },
+        {
+            'name': 'Red Hoodie',
+            'price': 110,
+            'image': 'img/Images7.png'
+        },
+        {
+            'name': 'Black T-shirt',
+            'price': 139,
+            'image': 'img/Images8.png'
+        },
+        {
+            'name': 'Modern Shoes',
+            'price': 399,
+            'image': 'img/Images9.png'
+        },
+        {
+            'name': 'Modern T-Shirt',
+            'price': 399,
+            'image': 'img/Images.png'
+        },
+        {
+            'name': 'Black Shirt',
+            'price': 110,
+            'image': 'img/Images10.png'
+        },
+        {
+            'name': 'Mid Century Modern T-Shirt',
+            'price': 139,
+            'image': 'img/Images11.png'
+        },
+        {
+            'name': 'Corporate Office Shoes',
+            'price': 110,
+            'image': 'img/Images12.png'
+        },
+    ];
+</script>
+
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <!-- Logo  -->
+                <div class="logo">
+                    <img src="./img/Logo.png" alt="" class="logo">
+                </div>
+                <!-- Nav  -->
+                <div class="nav-bar">
+                    <ul>
+                        <li class="nav-bar-link"><a href="./product.html">Product</a></li>
+                        <li class="nav-bar-link"><a href="">Pricing</a></li>
+                        <li class="nav-bar-link"><a href="">Contact us</a></li>
+                        <li class="nav-bar-link"><a href="">Blog</a></li>
+                        <li class="nav-bar-link"><a href="">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Action  -->
+                <div class="action">
+                    <p class="action__login">Login</p>
+                    <a href="" class="btn action__book">Book a Demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="product">
+        <div class="container">
+            <div class="product__inner">
+                <div class="product__content">
+                    <h1 class="product__content-title">Find Your Products</h1>
+                    <div class="product-row">
+
+                        <div class="product__row-filter">All Filters</div>
+                        <div class="product__row-sort">
+                            <p class="product__desc">Sort by:</p>
+                            <h5 class="product__style-sort">Relevency</h5>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var cart = [];
+                </script>
+                <div class="product__popup">
+                    <div class="product__popup-inner">
+                        <div class="product__popup-list">
+
+
+                        </div>
+                        <div class="product__popup-text">
+                            <div class="product__bill">
+                                <h4 class="cart-oder">Cart order total <span class="quantity">(0)</span> </h4>
+                                <h2 id="total-bill" class="total-bill">0$</h2>
+                            </div>
+                            <h4 class="product__popup-title">Congrats! You get Free Shipping <br> Excludes furniture,
+                                mattresses & other
+                                exclusions apply</h4>
+
+
+                            <button class="product__popup-view"> View Cart</button> <br>
+                            <button class="product__popup-check"> Check out</button>
+
+                            <div class="close-icon" onclick="closePopup()">
+                                <i class="fa-solid fa-xmark fa-2"></i>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product__list">
+                    <!-- 1  -->
+                    <script>
+                        let closeElement = document.querySelector(".close-icon");
+
+                        let a = 1;
+                        for (i = 0; i < list_spEl.length; i++) {
+                            var sp = list_spEl[i];
+                            var name = sp.name;
+                            var price = sp.price;
+                            var image = sp.image;
+                            document.write(`
+                    <div class="product__list-item" onmouseover = "addCart(this)" onmouseout = "hiddenCart(this)">
+                            <div class="product__image">
+                                <img src="${image}" alt="" class="product-img">
+                            </div>
+                                <button class="btn-add" onclick = "openPopup(this)" data-name="${name}" data-price="${price}" data-image="${image}" )">Add to cart</button>
+                                
+    
+                            <div class="product__detail">
+                                <div class="product__contact">
+                                    <p class="product__trademark">Men-Cloth</p>
+                                    <img src="img/icon-heart.svg" alt="" class="product__like" onclick = "likeProduct(this)">
+                                </div>
+                                <h4 class="product__title">${name}</h4>
+                                <div class="product__info">
+                                    <div class="product__evaluate">
+                                        <img src="img/star.svg" alt="" class="product__star">
+                                        <p class="product__star-vote">5.0 (28)</p>
+                                    </div>
+    
+                                    <span class="product__price">${price}</span>
+                                   
+                                </div>
+                            </div>
+                        </div>`)
+                        } 
+                    </script>
+
+                </div>
+                <div class="btn-load">
+                    <button class="load-more">Load more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------Footer------  -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <h2 class="footer__heading">
+                        All eCommerce CMS platforms supported
+                    </h2>
+                    <p class="footer__top-desc">Magento 2, Shopify, WooCommerce, BigCommerce, Opencart and more.</p>
+                    <div class="footer__brand">
+                        <img src="img/Brand1.svg" alt="" class="footer__brand-img">
+                        <img src="img/Brand2.svg" alt="" class="footer__brand-img">
+                        <img src="img/Brand3.svg" alt="" class="footer__brand-img">
+                        <img src="img/Brand4.svg" alt="" class="footer__brand-img">
+                        <img src="img/Brand5.svg" alt="" class="footer__brand-img">
+                    </div>
+                    <img src="img/Footer-Image.svg" alt="" class="footer-img">
+                </div>
+                <div class="footer__nav">
+                    <div class="header-top footer__navbar">
+                        <!-- Logo  -->
+                        <div class="logo">
+                            <img src="img/LOGO1.svg" alt="" class="logo">
+                        </div>
+                        <!-- Nav  -->
+                        <div class="nav-bar footer__nav-bar">
+                            <ul>
+                                <li class="nav-bar-link"><a href="./product.html">Product</a></li>
+                                <li class="nav-bar-link"><a href="">Pricing</a></li>
+                                <li class="nav-bar-link"><a href="">Contact us</a></li>
+                                <li class="nav-bar-link"><a href="">Blog</a></li>
+                                <li class="nav-bar-link"><a href="">About Us</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Action  -->
+                        <div class="social">
+                            <a href="">
+                                <img src="img/Social1.svg" alt="" class="social-link">
+                            </a>
+                            <a href="">
+                                <img src="img/Social2.svg" alt="" class="social-link">
+                            </a>
+                            <a href="">
+                                <img src="img/Social3.svg" alt="" class="social-link">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let prices = 0
+    function addCart(obj) {
+        obj.querySelector(".btn-add").style.display = "block";
+    }
+    function hiddenCart(obj) {
+        obj.querySelector(".btn-add").style.display = "none";
+
+    }
+    let quantity = 0;
+    let countItem = 0;
+    function openPopup(product) {
+        // hiện popup
+        let popupElement = document.querySelector(".product__popup");
+        popupElement.style.display = "block";
+
+        //tính tổng đơn hàng
+        let a = event.target.parentNode
+        let b = a.children[2]
+        let c = b.children[2]
+        // console.log('event.target.parentNode', event.target.parentNode);
+        // console.log(c.children[1].innerHTML);
+        let totalBillElement = document.getElementById('total-bill')
+        // console.log('totalBillElement', totalBillElement);
+        prices += Number(c.children[1].innerText)
+        // console.log(totalBillElement);
+        totalBillElement.classList.innerText = ''
+        totalBillElement.innerHTML = prices + "$";
+
+
+        //tổng số lượng
+        quantity += 1;
+        const quantityEl = document.querySelector(".quantity");
+        quantityEl.classList.innerText = ''
+        quantityEl.innerText = "(" + quantity + ")";
+
+
+
+
+        // Lấy thông tin sản phẩm
+        var name = product.getAttribute("data-name");
+        var price = product.getAttribute("data-price");
+        var image = product.getAttribute("data-image");
+
+
+        //kiểm tra nếu như sản phẩm đã có trong giỏ hàng thì chỉ tăng số lượng
+        var flag = false;
+        for (var i = 0; i < cart.length; i++) {
+            if (cart[i].name == name) {
+                quantity++;
+                flag = true;
+                break;
+            }
+        }
+        if (flag == false) {
+            let temp = { name, price, image }
+            cart.push(temp)
+        }
+
+
+        const popupRowEl = document.querySelector('.product__popup-list');
+        const rowsToRemove = popupRowEl.querySelectorAll('.wrapRow');
+        rowsToRemove.forEach(row => row.remove());
+
+        for (i = 0; i <= cart.length; i++) {
+            var sp = cart[i];
+            var name = sp.name;
+            var price = sp.price;
+            var image = sp.image;
+            // popupRowEl.innerHTML = ''
+            popupRowEl.innerHTML += `
+                         <div class='wrapRow'>
+                            <div class="product__row">
+                                <p class="product__desc-item">Item ${i + 1}</p>
+                                <div class="product__update">
+                                    <p class="product__desc text-underline">Edit</p>
+                                    <p class="product__desc text-underline" onclick="removeItem(${image})">Remove</p>
+                                </div>
+                            </div>
+                            <div class="popup-left">
+                                <div class="wrap-img">
+                                    <img src="${image}" alt="" class="popup-img">
+                                </div>
+                                <div class="popup-content">
+                                    <h4 class="popup-title">${name}</h4>
+                                    <p class="popup-desc">ID: ${Math.floor(Math.random() * 10000000000)}</p>
+                                    <p class="popup-price">${price}$</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+        `;
+        }
+
+        const popupTitle = document.querySelector('.popup-title');
+        const popupDesc = document.querySelector('.popup-desc');
+        const popupPrice = document.querySelector('.popup-price');
+        const popupImg = document.querySelector('.popup-img');
+
+
+        // Cập nhật nội dung popup với thông tin sản phẩm được truyền vào
+        // for (i = 0; i < cart.length; i++) {
+        //     var sp = cart[i];
+        //     var name = sp.name;
+        //     var price = sp.price;
+        //     var image = sp.image;
+        //     document.write(`
+        //           `)
+        // popupTitle.innerHTML = name;
+        // popupDesc.innerHTML = `Cart ID: ${Math.floor(Math.random() * 10000000000)}`; // ví dụ cho cart ID là một số ngẫu nhiên
+        // popupPrice.innerHTML = price + "$";
+        // popupImg.src = image;
+
+
+
+    }
+
+    function removeItem(x) {
+        console.log(x);
+    }
+
+
+    function likeProduct(obj) {
+        if (obj.src.endsWith('img/icon-heart.svg') == true) {
+            obj.src = "img/heart-2.svg";
+        } else {
+            obj.src = "img/icon-heart.svg";
+        }
+    }
+    function closePopup() {
+        let close = document.querySelector(".product__popup").style.display = "none";
+    }
+</script>
+
+</html>
