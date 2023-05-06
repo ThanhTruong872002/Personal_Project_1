@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Project Of Thanh Trường</title>
+
+    <!-- Link CSS  -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+
     <link href="https://fonts.cdnfonts.com/css/roobert?styles=49579,49575,49577,49581,49571,49573" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -40,8 +45,8 @@
                 <div class="logo">
                     <img src="img/LOGO1.svg" alt="" class="logo">
                 </div>
-                <!-- Nav  -->
-                <div class="nav-bar">
+                <!-- Nav PC -->
+                <nav class="nav-bar">
                     <ul>
                         <li class="nav-bar-link"><a href="./product.html">Product</a></li>
                         <li class="nav-bar-link"><a href="">Pricing</a></li>
@@ -49,9 +54,51 @@
                         <li class="nav-bar-link"><a href="">Blog</a></li>
                         <li class="nav-bar-link"><a href="">About Us</a></li>
                     </ul>
-                </div>
+                </nav>
 
-                <!-- Action  -->
+                <!-- Nav Mobile  -->
+                <label for="nav-mobile-input" class="nav__bars-btn">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_16211_2239)">
+                            <path d="M5 16H27" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5 8H27" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5 24H27" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_16211_2239">
+                                <rect width="32" height="32" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </label>
+
+                <input type="checkbox" name="" id="nav-mobile-input" class="nav__input">
+
+
+
+                <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                <nav class="nav__mobile">
+                    <label for="nav-mobile-input" class="nav__mobile-close">
+                        <i class="fa-solid fa-xmark fa-2"></i>
+                    </label>
+
+                    <div class="nav__mobile-list">
+                        <ul>
+                            <li class="nav__mobile-link"><a href="./product.html">Product</a></li>
+                            <li class="nav__mobile-link"><a href="">Pricing</a></li>
+                            <li class="nav__mobile-link"><a href="">Contact us</a></li>
+                            <li class="nav__mobile-link"><a href="">Blog</a></li>
+                            <li class="nav__mobile-link"><a href="">About Us</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Action PC -->
                 <div class="action">
                     <p class="action__login" style="cursor: pointer;"><a href="./login.html">Login</a></p>
                     <a href="./login.html" class="btn action__book">Book a Demo</a>
@@ -62,7 +109,8 @@
             <div class="hero">
                 <div class="hero__inner">
                     <section class="hero__content">
-                        <h1 class="hero__heading">Online catalog management <img src="img/decor_hero_.png" alt="">
+                        <h1 class="hero__heading">Online catalog management <img src="img/decor_hero_.png" alt=""
+                                class="decor__hero">
                             tool</h1>
                         <p class="hero__desc">Skyrocket your online store conversion rate the customer experience
                             with visual merchandising.</p>
@@ -126,9 +174,8 @@
                         <div class="work__list">
                             <!-- Item 1  -->
                             <div class="work__list-item">
-                                <div class="work__wrap">
-                                    <img src="img/Work-img-1.svg" alt="" class="work-img">
-                                </div>
+                                <img src="img/Fix-work-1.svg">
+
                                 <div class="work__list-content">
                                     <h1 class="work__list-heading">Set basic sorting rules for any categories</h1>
                                     <p class="work__list-desc">Bulk sort products on any category page you need, combine
@@ -152,16 +199,13 @@
                                     <p class="work__list-desc-2">Set scores for products by adding number, SKUs with
                                         higher scores will be displayed on top of the category pages.</p>
                                 </div>
+                                <img src="img/Fix-work-2.svg">
 
-                                <div class="work__wrap">
-                                    <img src="./img/Work-item2.svg" alt="" class="work-img">
-                                </div>
                             </div>
                             <!-- Item 3  -->
                             <div class="work__list-item">
-                                <div class="work__wrap">
-                                    <img src="img/Work-Item3.svg" alt="" class="work-img">
-                                </div>
+                                <img src="img/Fix-work-3.svg">
+
                                 <div class="work__list-content">
                                     <h1 class="work__list-heading">Limit and add product groups per category pages</h1>
                                     <p class="work__list-desc">Achieve a certain variety on your catalog pages:</p>
@@ -187,9 +231,8 @@
                                         <li class="sort-rude">Applying discounts</li>
                                     </ul>
                                 </div>
-                                <div class="work__wrap">
-                                    <img src="img/Work-Item4.svg" alt="" class="work-img">
-                                </div>
+                                <img src="img/Fix-work-4.svg">
+
                             </div>
                             <!-- Item 5  -->
                             <div class="work__list-item">
@@ -422,7 +465,7 @@
                         </div>
                         <img src="img/Footer-Image.svg" alt="" class="footer-img">
                     </div>
-                    <div class="footer__nav">
+                    <div class="footer__nav footer_nav">
                         <div class="header-top footer__navbar">
                             <!-- Logo  -->
                             <div class="logo">
